@@ -58,6 +58,7 @@ $route['admin/logout'] = 'admin/admin/logout';
 /* admin routes */
 
 
+<<<<<<< HEAD
 /* front routes */
 $route['products/(:any)'] = 'products/listing/$1';
 $route['resetpassword/(:any)'] = 'user/resetpassword/$1';
@@ -67,6 +68,8 @@ $route['about-us'] = 'welcome/about_us';
 $route['support'] = 'welcome/support';
 $route['catalogs'] = 'welcome/catalogs';
 /* front routes */
+=======
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 
 $route['default_controller'] = 'welcome';
 $route['product-listing/(:any)'] = 'Welcome/viewproducts/$1';

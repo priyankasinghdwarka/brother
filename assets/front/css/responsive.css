@@ -1,6 +1,7 @@
 /* Medium Desktop */
 
 @media (max-width:1280px) {
+<<<<<<< HEAD
 /* 27-oct */
 .side-link li a {
     padding: 5px 25px;
@@ -18,6 +19,8 @@
 .frame-list .list-inline-item {
     margin-bottom: 15px;
 }
+=======
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 
 }
 
@@ -50,6 +53,7 @@ span.fa.fa-bars {
 .sidenav {
 	z-index:99999;
 }
+<<<<<<< HEAD
 
 /* 27-Oct */
 .description span {
@@ -69,6 +73,8 @@ h3.title-left {
     margin: 0;
 }
 
+=======
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 }
 /* Mobile Landscape*/
 
@@ -84,7 +90,10 @@ h3.title-left {
 }
 .img-wrap {
 	height:auto;
+<<<<<<< HEAD
 	max-height:unset !important;
+=======
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 }
 .img-wrap img {
     width: 100%;
@@ -98,7 +107,11 @@ h3.title-left {
 }
 
 .heading-section h1 {
+<<<<<<< HEAD
     font-size: 22px;
+=======
+    font-size: 30px;
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 }
 .carousel-inner {
     height: 380px;
@@ -118,6 +131,7 @@ h3.title-left {
     margin-bottom: 15px;
 }
 .about-brother h2 {
+<<<<<<< HEAD
     font-size: 22px;
 }
 .about-brother p {
@@ -130,6 +144,12 @@ h3.title-left {
 }
 .footer-title h4 {
     font-size: 20px;
+=======
+    font-size: 30px;
+}
+.about-brother p {
+    text-align: justify;
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 }
 .footer {
     padding: 30px 0px;
@@ -147,6 +167,7 @@ h3.title-left {
     margin-bottom: 20px;
 }
 
+<<<<<<< HEAD
 /* 27-Oct */
 .page-title ol {
     float: none;
@@ -202,6 +223,8 @@ span.save-quotes {
 .preview-product {
     overflow: hidden;
 }
+=======
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 }
 
 /* Mobile Landscape*/
@@ -238,6 +261,7 @@ span.save-quotes {
     font-size: 20px;
 }
 
+<<<<<<< HEAD
 /* 27-oct */
 .wraper-main-inner {
     padding: 20px 0px;
@@ -291,6 +315,8 @@ span.save-quotes {
 .form-group.reset-mbile-margin {
     margin: 0;
 }
+=======
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 }
 /* Ipad */
 
@@ -358,6 +384,7 @@ span.save-quotes {
 }
 }
 
+<<<<<<< HEAD
 @media (max-width:768px)  {
 	.select-frame-wrap {
     margin: 0 auto;
@@ -389,6 +416,12 @@ padding:.25rem 1.25rem;
 }
 
 
+=======
+@media (min-width:768px)  {
+	
+}
+
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 @media (min-width:768px) and (max-width:1199px) {
 .carousel-caption {
     width: 100%;

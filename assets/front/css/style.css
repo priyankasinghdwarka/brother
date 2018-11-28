@@ -847,6 +847,7 @@ span.badge {
 
 .bg-light {
 	background:#fff !important;
+<<<<<<< HEAD
 }
 
 
@@ -2131,4 +2132,6 @@ h4.billing-address {
 p.biller-name {
     margin: 0;
     font-weight: 500;
+=======
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 }

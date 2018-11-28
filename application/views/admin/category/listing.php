@@ -24,9 +24,12 @@
                 <tr>
                   <th>S.No</th>
                   <th>Category Name</th>
+<<<<<<< HEAD
                    <th>Department</th>
                    <th>Category Short Desc</th>
                     <th>Published State</th>
+=======
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
                   <th>Action</th>
                 </tr>
               </thead>
@@ -37,6 +40,7 @@
                 <tr class="gradeX">
                   <td><?php echo ++$sno?></td>
                   <td><?php echo $row->CatTitle?></td>
+<<<<<<< HEAD
                   <td><?php echo $row->DeptTitle?></td>
                   <td><?php echo $row->CatShortDesc?></td>
                   <td><?php echo $row->published_state?></td>
@@ -44,6 +48,12 @@
                     <a href="<?php echo base_url('admin/category/edit/'.$row->id); ?>" class="btn  btn-success btn-xs"><i class="fa fa-fw fa-edit"></i>Edit</a>
                    <!--  <a href="<?php echo base_url('admin/category/delete/'.$row->id); ?>" onclick="return confirm('Are you sure you want to delete this item?');" class="btn btn-danger btn-xs"><i class="fa fa-fw fa-trash"></i>Delete
                     </a> -->
+=======
+                  <td width="15%">
+                    <a href="<?php echo base_url('admin/category/edit/'.$row->id); ?>" class="btn  btn-success btn-xs"><i class="fa fa-fw fa-edit"></i>Edit</a>
+                    <a href="<?php echo base_url('admin/category/delete/'.$row->id); ?>" onclick="return confirm('Are you sure you want to delete this item?');" class="btn btn-danger btn-xs"><i class="fa fa-fw fa-trash"></i>Delete
+                    </a>
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
                   </td>
                </tr>
               <?php }?>

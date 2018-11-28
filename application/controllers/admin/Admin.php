@@ -7,7 +7,10 @@ class Admin extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('Admin_model');
+<<<<<<< HEAD
 		
+=======
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 	}
 
     public function listing()
@@ -19,6 +22,7 @@ class Admin extends CI_Controller
     public function index()
 	{
 		//$this->check_admin_login('IS_LOGIN');
+<<<<<<< HEAD
 		
 			if(isset($_POST['login-btn']))
 			{
@@ -53,6 +57,43 @@ class Admin extends CI_Controller
 							}
 					}
 			}
+=======
+		if(isset($_POST['login-btn']))
+		{
+            $this->form_validation->set_rules('email', 'Email address', 'trim|required');
+			$this->form_validation->set_rules('password', 'Password', 'trim|required');
+			$this->form_validation->set_error_delimiters('<div class="has-error"><i class="icon-warning-sign"></i>&nbsp', '</div>');
+			if($this->form_validation->run() == TRUE)
+			{
+				$email = $this->input->post('email');
+				$password = $this->input->post('password');
+
+			}
+
+			if(empty($email) || empty($password))
+			{
+				$this->session->set_flashdata('msg','<div class="alert alert-danger">Invalid login credentials. please try again</div>');
+				redirect('admin');
+			}
+            else
+			{
+				$rows = $this->Admin_model->admin_login($email,$password);
+				if(count($rows)==1)
+				{
+					   
+						$admin_data = array('ADMIN_ID'=>$rows[0]->id,'ADMIN_EMAIL'=>$rows[0]->email);
+						$this->session->set_userdata($admin_data);
+						redirect('admin/dashboard');
+					
+				}
+				else
+				{
+					$this->session->set_flashdata('msg','<div class="alert alert-danger">Invalid login credentials. please try again</div>');
+					redirect('admin');
+				}
+			}
+		}
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 		$this->load->view('admin/login');
 	}
 

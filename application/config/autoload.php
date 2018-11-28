@@ -89,7 +89,11 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
+<<<<<<< HEAD
 $autoload['helper'] = array('url','file','form','app_helper');
+=======
+$autoload['helper'] = array('url','file','form');
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 
 /*
 | -------------------------------------------------------------------
@@ -132,4 +136,8 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
+<<<<<<< HEAD
 $autoload['model'] = array('front_model','user_model');
+=======
+$autoload['model'] = array();
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89

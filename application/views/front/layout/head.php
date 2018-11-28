@@ -9,7 +9,17 @@
 <!-- Plugin-CSS -->
 <link rel="stylesheet" href="<?php echo base_url('assets/front/'); ?>css/bootstrap.min.css" type="text/css"/>
 <link rel="stylesheet" href="<?php echo base_url('assets/front/'); ?>css/owl.carousel.min.css" type="text/css"/>
+<<<<<<< HEAD
 <link rel="stylesheet" href="<?php echo base_url('assets/front/'); ?>css/font-awesome.css" type="text/css"/>
 <!-- Main-Stylesheets -->
 <link rel="stylesheet" href="<?php echo base_url('assets/front/'); ?>css/style.css" type="text/css"/>
 <link rel="stylesheet" href="<?php echo base_url('assets/front/'); ?>css/responsive.css" type="text/css"/>
+=======
+<link rel="stylesheet" href="<?php echo base_url('assets/front/'); ?>css/nav.css" type="text/css"/>
+<link rel="stylesheet" href="<?php echo base_url('assets/front/'); ?>css/font-awesome.css" type="text/css"/>
+ <link href="<?php echo base_url('assets/front/'); ?>css/jquery.exzoom.css" rel="stylesheet" type="text/css"/>
+<!-- Main-Stylesheets -->
+<link rel="stylesheet" href="<?php echo base_url('assets/front/'); ?>css/style.css" type="text/css"/>
+<link rel="stylesheet" href="<?php echo base_url('assets/front/'); ?>css/responsive.css" type="text/css"/>
+
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89

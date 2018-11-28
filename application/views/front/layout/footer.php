@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <footer>
    <div class="footer">
       <div class="container">
@@ -102,6 +103,8 @@
       </div>
    </div>
 </div>
+=======
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 <a href="#" id="scroll" style="display: none;"><span>
 <!-- Javascript --->
 <script src="<?php echo base_url('assets/front/'); ?>js/jquery-1.12.4.min.js"></script>

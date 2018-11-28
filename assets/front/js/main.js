@@ -15,8 +15,12 @@ $('.owl-carousel').owlCarousel({
             items:5
         }
     }
+<<<<<<< HEAD
 })
 
 
 
 
+=======
+})
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89

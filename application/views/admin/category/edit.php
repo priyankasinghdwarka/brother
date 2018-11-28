@@ -28,6 +28,7 @@
         </div>
         <div class="widget-content nopadding">
           <form action="" method="post" class="form-horizontal">
+<<<<<<< HEAD
              <div class="control-group">
               <label class="control-label">Department :</label>
               <div class="controls">
@@ -37,6 +38,15 @@
                <?php echo $value->DeptTitle;?></option>
             <?php } ?>
             </select>
+=======
+
+             <div class="control-group">
+              <label class="control-label">Parent Category :</label>
+              <div class="controls">
+              <select class="span6" name="DeptID" required id="select_cat">
+                <option value='0'>Root</option>
+                <?php echo $this->Category_model->get_all_child_category(0); ?>
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
           </select>
               </div>
             </div>
@@ -46,7 +56,16 @@
                 <input type="text" class="span6" name="CatTitle" onkeyup="return set_slug(this.value);" value="<?php echo $result[0]->CatTitle; ?>" placeholder="Enter Category Name" />
               </div>
             </div>
+<<<<<<< HEAD
              
+=======
+              <div class="control-group">
+              <label class="control-label">URL Slug :</label>
+              <div class="controls">
+                <input type="text" class="span6" name="url_slug" id="url_slug" value="<?php echo $result[0]->url_slug; ?>"readonly placeholder="Enter Url Slug" />
+              </div>
+            </div>
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
             <div class="control-group">
               <label class="control-label">Short Description :</label>
               <div class="controls">
@@ -57,6 +76,7 @@
             <div class="control-group">
               <label class="control-label">Description :</label>
               <div class="controls">
+<<<<<<< HEAD
                 <textarea class="span6"  name="CatDescription" placeholder="Enter description"><?php echo $result[0]->CatDescription; ?></textarea>
              
               </div>
@@ -99,6 +119,32 @@
               </div>
             </div>
            <div class="form-actions">
+=======
+                <input type="text" class="span6" name="CatDescription" value="<?php echo $result[0]->CatDescription; ?>"placeholder="Enter CatDescription" />
+              </div>
+            </div>
+             <div class="control-group">
+              <label class="control-label">Root Display :</label>
+              <div class="controls">
+               <select class="span6" name="root_display" required>
+                <option value='yes' <?php echo($result[0]->root_display=="yes")?'selected':''; ?> >Yes</option>
+                <option value='no' <?php echo($result[0]->root_display=="no")?'selected':''; ?>>No</option>
+          </select>
+              </div>
+            </div>
+              <div class="control-group">
+              <label class="control-label">Status :</label>
+              <div class="controls">
+               <select class="span6" name="status" required>
+                <option value='1' <?php echo($result[0]->status==1)?'selected':''; ?> >Active</option>
+                <option value='0' <?php echo($result[0]->status==0)?'selected':''; ?>>Inactive</option>
+          </select>
+              </div>
+            </div>
+
+
+          <div class="form-actions">
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
               <button type="submit" name="submit" class="btn btn-success">Save</button>
            <!--   <a href="<?php echo base_url()?>admin/category/listing"> <button type="submit"  class="btn  btn-success btn-xs">Cancel</button></a> -->
             </div>

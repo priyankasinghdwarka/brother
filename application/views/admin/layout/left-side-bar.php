@@ -26,7 +26,11 @@
          <a href="#"><i class="icon-question-sign"></i> <span>Manage Categories</span></a>
          <ul>
             <li><a href="<?php echo base_url('admin/category/listing'); ?>">Category Listing</a></li>
+<<<<<<< HEAD
            
+=======
+            <li><a href="<?php echo base_url('admin/category/add'); ?>">Add New</a></li>
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
          </ul>
       </li>
 
@@ -38,6 +42,7 @@
          </ul>
       </li>
 
+<<<<<<< HEAD
      <li class="submenu">
          <a href="#"><i class="icon icon-leaf"></i> <span>Manage Product</span></a>
          <ul>
@@ -61,6 +66,29 @@
          </ul>
       </li>
      <!--
+=======
+     <!-- <li class="submenu">
+         <a href="#"><i class="icon icon-leaf"></i> <span>Manage Language</span></a>
+         <ul>
+            <li><a href="<?php echo base_url('admin/language/listing'); ?>">Manage Language</a></li>
+            <li><a href="<?php echo base_url('admin/language/add'); ?>">Add New</a></li>
+         </ul>
+      </li>
+      <li class="submenu">
+         <a href="#"><i class="icon icon-money"></i> <span>Manage Height</span></a>
+         <ul>
+            <li><a href="<?php echo base_url('admin/height/listing'); ?>">Manage Height</a></li>
+            <li><a href="<?php echo base_url('admin/height/add'); ?>">Add New</a></li>
+         </ul>
+      </li>
+      <li class="submenu">
+         <a href="#"><i class="icon-question-sign"></i> <span>Manage Faq</span></a>
+         <ul>
+            <li><a href="<?php echo base_url('admin/faq/listing'); ?>">Manage Faq</a></li>
+            <li><a href="<?php echo base_url('admin/faq/add'); ?>">Add New</a></li>
+         </ul>
+      </li>
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
       <li class="submenu">
          <a href="#"><i class="icon icon-money"></i> <span>Manage Plans</span></a>
          <ul>

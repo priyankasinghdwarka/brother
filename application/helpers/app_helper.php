@@ -5,6 +5,7 @@ function create_slug($string)
    return strtolower($slug);
 }
 
+<<<<<<< HEAD
 function create_slug_reset($string)
 {
    $slug=preg_replace('/[^A-Za-z0-9-]+/', '/', $string);
@@ -26,6 +27,8 @@ function get_left_category($category_data, $header_name)
   return $array_data;
 }
 
+=======
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 function get_timeago($ptime)
 {
     $estimate_time = time() - $ptime;
@@ -33,7 +36,11 @@ function get_timeago($ptime)
     {
         return 'less than 1 second ago';
     }
+<<<<<<< HEAD
     $condition = array(
+=======
+    $condition = array( 
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
                 12 * 30 * 24 * 60 * 60  =>  'year',
                 30 * 24 * 60 * 60       =>  'month',
                 24 * 60 * 60            =>  'day',
@@ -106,7 +113,11 @@ function delete_file($dir,$file)
 	if(is_file($dir.$file))
 	{
 		return unlink($dir.$file);
+<<<<<<< HEAD
 	}
+=======
+	}	
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 }
 
 function admin_caregory_breadcrumbs($data)
@@ -118,7 +129,11 @@ function admin_caregory_breadcrumbs($data)
 	else
 	{
 		echo $data;
+<<<<<<< HEAD
 	}
+=======
+	}	
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 }
 
 function home_slider_class($no)
@@ -233,7 +248,11 @@ function inclusions( $values = array() ) {
 							),
 						),
 	);
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 	$output['header_js'] = array(
 		'assets/js/jquery-2.2.3.min',
 		'assets/js/slimscroll'
@@ -249,4 +268,8 @@ function inclusions( $values = array() ) {
 	return $output;
 }
 
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89

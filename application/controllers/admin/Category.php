@@ -60,12 +60,17 @@ class Category extends CI_Controller
 	public function edit()
 	{
 		$args = func_get_args();
+<<<<<<< HEAD
+=======
+		//$data['cat'] = $this->category_model->get_all_category();
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 		$data['result'] = $this->Category_model->get_category_by_id($args[0]);
 		$this->form_validation->set_rules('CatTitle', 'Category', 'trim|required');
 		if(isset($_POST['submit']))
 		{
 			if ($this->form_validation->run() == TRUE)
 			{
+<<<<<<< HEAD
 				$DeptID         = $_POST['DeptID'];
 				$CatTitle   	= $_POST['CatTitle'];
 				$CatShortDesc	= $_POST['CatShortDesc'];
@@ -86,6 +91,24 @@ class Category extends CI_Controller
 		                'CatDescription'       => $CatDescription,
 		                'DisplayOrder'         => $DisplayOrder
 		                
+=======
+				$DeptID  	= $_POST['DeptID'];
+				$CatTitle   	= $_POST['CatTitle'];
+				$url_slug 		= $_POST['url_slug'];
+				$CatShortDesc	= $_POST['CatShortDesc'];
+				$CatDescription = $_POST['CatDescription'];
+				$root_display 		= $_POST['root_display'];
+				$status 		= $_POST['status'];
+                 $postdata = array (
+                     	'DeptID'            => $DeptID,
+		                'CatTitle'             => $CatTitle,
+		                'url_slug'             => $url_slug,
+		                'CatShortDesc'         => $CatShortDesc,
+		                'CatDescription'       => $CatDescription,
+		                 'root_display'         => $root_display,
+		                'status'               => $status,
+		                'created_date'         => date('Y-m-d h:i:s')
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 		          );
 
                 // ECHO "<PRE>";PRINT_r($postdata);DIE;
@@ -96,7 +119,10 @@ class Category extends CI_Controller
 		
 		}
 	$data['category'] = $this->Category_model->get_all_category(); 
+<<<<<<< HEAD
 	$data['department'] = $this->Category_model->get_all_dept();
+=======
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 	$this->load->view('admin/category/edit',$data);
 	}
 
@@ -111,4 +137,8 @@ class Category extends CI_Controller
 	
 	
 		
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89

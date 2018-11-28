@@ -3,15 +3,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
 
+<<<<<<< HEAD
 	function __construct()
 	{
 		parent::__construct();
 		$this->load->model('Welcome_model');
 		$this->load->model('Front_model');
+=======
+	function __construct(){
+		parent::__construct();
+		$this->load->model('Welcome_model');
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 	}
 
 	public function index()
 	{
+<<<<<<< HEAD
 		if (isset($_POST['submit'])){
 		$this->load->helper(array('form', 'url'));
 		$this->load->library('form_validation');
@@ -133,5 +140,23 @@ class Welcome extends CI_Controller {
 			$c_id = $_POST['cid'];
 			echo $this->front_model->fetch_state($c_id);
 	}
+=======
+		$data['data']=$this->Welcome_model->get_all_menu();
+	
+		$this->load->view('front/home',$data);
+	}
+	public function viewproducts()
+	{   $id = $this->uri->segment('2');
+		$data['result']=$this->Welcome_model->get_dept_categories($id);
+		$data['heading']=$this->Welcome_model->get_license($id);
+		$data['data']=$this->Welcome_model->get_all_menu();
+		$data['get_side_mega_menu']=$this->Welcome_model->get_side_mega_menu($id);
+		
+		//echo"<pre>";print_r($data['get_side_mega_menu']);
+	    $this->load->view('product-listing',$data);
+		
+	}
+
+>>>>>>> 717dfd12dadaf7fcd3d7adc2b2f8a31651363a89
 
 }
